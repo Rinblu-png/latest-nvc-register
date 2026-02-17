@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.text-round {
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+}
+
+img.logo {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+img.logo {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    transition: transform .2s;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.7px);
+    -webkit-backdrop-filter: blur(6.7px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+}
+
+
+
+body,
+html {
+    overflow-x: hidden;
+    font-family: 'Kanit';
+    min-height: 100vh;
+    /* background-color: #f5f5f5; */
+    background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 90px;
+}
+
+.card-title img {
+    width: 170px;
+}
+
+.header-bg,
+.navbar,
+footer {
+    background: rgb(22, 147, 255);
+    background: linear-gradient(90deg, rgba(22, 147, 255, 1) 0%, rgba(1, 160, 255, 1) 35%, rgba(66, 76, 241, 1) 100%);
+}
+
+ul li .nav-link {
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+ul li .nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+ul li .nav-link:hover:after {
+    width: 90%;
+}
+
+@media only screen and (max-width: 992px) {
+    ul li .nav-link:hover:after {
+        width: 20%;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    ul li .nav-link:hover:after {
+        width: 30%;
+    }
+
+}
+
+.navbar-nav a {
+    font-size: 18px;
+}
+
+footer .lead {
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 576px) {
+    footer .lead {
+        margin-top: 10px;
+        float: left;
+    }
+
+}
+
+.zoom-img {
+    transition: transform .5s ease;
+}
+
+.zoom-img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-reg:hover {
+    background-color: #e6e8e7;
+}
+.map {
+    max-width: 700px;
+}
+.map iframe {
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .why {
+        font-size: 26px;
+    }
+    
+}
+

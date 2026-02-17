@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit';
+}
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+    padding: 2rem;
+    background: rgb(22, 147, 255);
+    background: linear-gradient(90deg, rgba(22, 147, 255, 1) 0%, rgba(1, 160, 255, 1) 35%, rgba(66, 76, 241, 1) 100%);
+    text-align: center;
+}
+
+
+
+a {
+    text-decoration: none;
+    color:black
+}
+a:hover {
+    color:gray;
+}
+
+
+
+footer .lead{
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 576px) {
+    footer .lead {
+        margin-top: 10px;
+        float: left;
+    }
+    
+}
